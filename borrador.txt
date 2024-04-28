@@ -1,0 +1,29 @@
+Comandos instalación laravel / react / boostrap:
+
+Proyecto laravel en general
+composer create-project laravel/laravel postventa-burg
+
+UI(user interface)
+composer require laravel/ui
+
+Bootstrap
+php artisan ui bootstrap
+
+React 
+php artisan ui react
+
+Ahora se instala la ui
+npm install
+
+----------------------------------------
+Configurar rutas en laravel para que cualquier ruta apute a React
+-----------------------------------------
+Archivo web.php
+
+Route::get('{any}', function () {
+    return view('welcome');
+})->where('any', '.*');
+_______________________________
+
+
+
